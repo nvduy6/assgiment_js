@@ -1,7 +1,8 @@
 import data from "../data";
 const NewList = {
         print() {
-            return `
+            return /*html*/ `
+            
          <h3 class="my-3 text-cyan-900 text-xl font-medium ">
                     <a href="">TIN TỨC SINH VIÊN</a>
                 </h3>

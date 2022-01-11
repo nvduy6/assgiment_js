@@ -5,7 +5,7 @@ import MenuList from "../comporents/menu";
 import NewsList from "../comporents/nexlist";
 const HomePage = {
     print() {
-        return `
+        return /* html */ `
         <div class="mt-1 py-2 bg-blue-900">
            ${Logo.print()}
         </div>
