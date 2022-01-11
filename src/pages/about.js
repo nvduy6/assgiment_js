@@ -1,9 +1,9 @@
 const AboutPage = {
-    print() {
+    render() {
         return /*html */ `
-         <h1 class="text-2xl my-10 font-bold">TÔN VINH ONG VÀNG</h1>
-        <img class="m-auto w-4/5" src="https://caodang.fpt.edu.vn/wp-content/uploads/x87104554_2870617879663960_7616087389408067584_o.jpg.pagespeed.ic.loJLMlZawO.jpg" alt="">
-            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quo repellat, a accusamus impedit veniam exercitationem vero culpa, tempora sint minus. Inventore recusandae deserunt optio beatae ipsum nihil odit est?</div>
+         <h1 class="text-red-600  mt-2 text-2xl mb-2 font-bold">TÔN VINH ONG VÀNG</h1>
+        <img class="m-auto w-4/5 " src="https://caodang.fpt.edu.vn/wp-content/uploads/x87104554_2870617879663960_7616087389408067584_o.jpg.pagespeed.ic.loJLMlZawO.jpg" alt="">
+            <div class="mt-2 mb-2 text-lg text-xl ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quo repellat, a accusamus impedit veniam exercitationem vero culpa, tempora sint minus. Inventore recusandae deserunt optio beatae ipsum nihil odit est?</div>
     <div class="grid grid-clo-4 grid-flow-col gap-4 mt-2 mb-2 ">
      <div class="border-2 py-1 px-1 content-center ">
         <img class="m-auto h-60 " src="https://i.chungta.vn/2014/10/02/12671top2-718483-1413426865.jpg" alt="">

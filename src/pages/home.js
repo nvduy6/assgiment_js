@@ -1,37 +1,30 @@
 import Banner from "../comporents/banner";
-import Footer from "../comporents/footer";
-import Logo from "../comporents/logo";
-import MenuList from "../comporents/menu";
 import NewsList from "../comporents/nexlist";
 const HomePage = {
-    print() {
-        return /* html */ `
-        <div class="mt-1 py-2 bg-blue-900">
-           ${Logo.print()}
-        </div>
-        <div class="h-12 bg-[#cb7801]">
-            ${MenuList.print()}
-        </div>
+    render() {
+        return /* html */ ` 
         <div class=" mt-1">
-          ${Banner.print()}
-
+          ${Banner.render()}
         </div>
 
-        <div class="content">
             <div class="home_block">
-                ${NewsList.print()}
+                <h3 class="my-3 text-cyan-900 text-xl font-medium ">
+                        <a href="">TIN TỨC SINH VIÊN</a>
+                    </h3>
+                    <div class="grid grid-clo-3 grid-flow-col gap-3">
+                    ${NewsList.render()}
+                    </div>
             </div>
-        </div>
-
-        <div class="content">
+            
             <div class="home_block">
-                ${NewsList.print()}
+                <h3 class="my-3 text-cyan-900 text-xl font-medium ">
+                        <a href="">HOẠT ĐỘNG SINH VIÊN</a>
+                    </h3>
+                    <div class="grid grid-clo-3 grid-flow-col gap-3">
+                    ${NewsList.render()}
+                    </div>
             </div>
-        </div>
-
-        <footer class="bg-blue-900 mt-2 mb-2 h-10">
-        ${Footer.print()}
-    </footer>
+        
         `
     }
 };
