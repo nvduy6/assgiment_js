@@ -13,7 +13,7 @@ import HomeDashboard from "./admin/home";
 import AddNews from "./admin/addnew";
 import EditNews from "./admin/editnew";
 import NewListstudent from "./admin/new";
-const router = new Navigo("/");
+const router = new Navigo("/", { linksSelector: 'a' });
 const print = (content) => {
     document.getElementById("header").innerHTML = Header.render();
     document.getElementById("app").innerHTML = content;
