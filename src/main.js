@@ -7,24 +7,28 @@ import NewsPage from "./pages/news";
 import DetailNewsPage from "./pages/detailNews";
 import Login from "./pages/login";
 import Sign from "./pages/sign";
-import Dashboard from "./comporents/dashboard";
-import HomeDashboard from "./admin/home";
 // import NewList from "./comporents/nexlist";
 import AddNews from "./admin/addnew";
-import EditNews from "./admin/editnew";
-import NewListstudent from "./admin/new";
-const router = new Navigo("/", { linksSelector: 'a' });
+import Menudashboad from "./comporents/menudashboad";
+import Statistical from "./comporents/statistical";
+import AdNewlist from "./admin/new";
+import EditNew from "./admin/editnew";
+import Dashboard from "./pages/dashboard";
+const router = new Navigo("/", { linksSelector: "a" });
 const print = (content) => {
     document.getElementById("header").innerHTML = Header.render();
     document.getElementById("app").innerHTML = content;
     document.getElementById("footer").innerHTML = Footer.render();
 
 };
-
-const AdminPrint = (page, id = '') => {
-    const layout = `${Dashboard.render(id)} ${page.render()}`;
-    document.getElementById("root").innerHTML = layout;
+const item = (layout) => {
+    document.getElementById("ad").innerHTML = layout;
+    document.getElementById("menudashboad").innerHTML = Menudashboad.render();
 };
+const dor = (container) => {
+    document.getElementById("content").innerHTML = container;
+};
+
 router.on({
     "/": () => {
         print(HomePage.render());
@@ -45,23 +49,22 @@ router.on({
         const { id } = data;
         print(DetailNewsPage.render(id));
     },
-    "/admin/dashboard": () => {
-        AdminPrint(HomeDashboard);
+    "/admin": () => {
+        item(Dashboard.render());
     },
-    "/admin/news": () => {
-        AdminPrint(NewListstudent);
+    "/admin/home": () => {
+        dor(Statistical.render());
     },
-    "/admin/news/add": () => {
-        AdminPrint(AddNews);
+    "/admin/new": () => {
+        dor(AdNewlist.render());
     },
-    "/admin/news/:id/edit": ({ data }) => {
-        const { id } = data;
-        AdminPrint(EditNews.render(id));
-    }
+    "/admin/new/add": () => {
+        dor(AddNews.render());
+    },
+    "/admin/new/:id/edit/": () => {
+        dor(EditNew.render());
+    },
 
-});
-router.notFound((match) => {
 
-    console.log("Not found", match);
 });
 router.resolve();

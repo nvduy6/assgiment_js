@@ -1,15 +1,10 @@
-const HomeDashboard = {
+const Statistical = {
     render() {
-        return /*html */ `
-        <main>
-        <div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
-        
-        <div class="px-4 py-6 sm:px-0">
-        <div class="border-4 border-dashed border-gray-200 rounded-lg h-96">
-        <div class="w-full px-4 py-2 bg-gray-200 lg:w-full">
-                <div class="container mx-auto mt-12">
-                    <div class="grid gap-4 lg:grid-cols-3">
-                        <div class="flex items-center px-4 py-6 bg-white rounded-md shadow-md">
+        return /*html*/ `
+        <div class="grid gap-4 lg:grid-cols-3">
+                       
+                    
+        <div class="flex items-center px-4 py-6 bg-white rounded-md shadow-md">
                             <div class="p-3 bg-indigo-600 rounded">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white" fill="none"
                                     viewBox="0 0 24 24" stroke="currentColor">
@@ -35,7 +30,7 @@ const HomeDashboard = {
                             </div>
                             <div class="mx-4">
                                 <h4 class="text-2xl font-semibold text-gray-700">30</h4>
-                                <div class="text-gray-500">All Blogs</div>
+                                <div class="text-gray-500">All Posts</div>
                             </div>
                         </div>
                         <div class="flex items-center px-4 py-6 bg-white rounded-md shadow-md">
@@ -50,16 +45,10 @@ const HomeDashboard = {
                                 <h4 class="text-2xl font-semibold text-gray-700">1000</h4>
                                 <div class="text-gray-500">All Transaction</div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
-        </div>
-        
-        </main>
+                            </div>
+                            </div>
         `
+
     }
 }
-export default HomeDashboard;
+export default Statistical;

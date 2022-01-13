@@ -10,7 +10,7 @@ const Header = {
     </div>
     <div class="h-12 bg-[#cb7801]">
         <nav class="flex justify-between">
-            <ul class="leading-10" id="menu">
+            <ul class="ml-2 leading-10" id="menu">
                 <li class="inline font-medium py-1 px-1 text-white  hover:text-cyan-900"><a href="/">Trang chủ</a></li>
                 <li class="inline font-medium py-1 px-1 text-white  hover:text-cyan-900"><a href="/about">Tuyển sinh</a></li>
                 <li class="inline font-medium py-1 px-1 text-white  hover:text-cyan-900"><a href="/about">Chương trình đào tạo</a></li>
@@ -21,10 +21,10 @@ const Header = {
                 <input class="search_item" type="text">
                 <input class="bg-cyan-900 text-white w-20 font-medium" type="button" value="Tìm kiếm">
             </div>
-            <div class="mt-2">
-                 <li class="inline font-medium ml-2 mt-2  text-white  hover:text-cyan-900"><a href="/sign">Đăng ký</a></li>
-                <li class="inline font-medium ml-1  text-white  hover:text-cyan-900"><a href="/login">Đăng nhập</a></li>
-                <li class="inline font-medium ml-1 text-white  hover:text-cyan-900"><a href="/admin/dashboard">Admin</a></li>
+            <div class="mt-2 mr-2 ">
+                 <li class="inline font-medium ml-1  text-white  hover:text-cyan-900"><a href="/sign">Sign</a></li>
+                <li class="inline font-medium ml-1  text-white  hover:text-cyan-900"><a href="/login">Login</a></li>
+                <li class="inline font-medium ml-1 text-white  hover:text-cyan-900"><a href="/admin/">Admin</a></li>
             </div>
         </nav>
     </div>
