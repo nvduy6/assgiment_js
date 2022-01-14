@@ -1,6 +1,10 @@
+import Footer from "../comporents/footer";
+import Header from "../comporents/header";
+
 const AboutPage = {
     render() {
         return /*html */ `
+        ${Header.render()}
          <h1 class="text-red-600  mt-2 text-2xl mb-2 font-bold">TÔN VINH ONG VÀNG</h1>
         <img class="m-auto w-4/5 " src="https://caodang.fpt.edu.vn/wp-content/uploads/x87104554_2870617879663960_7616087389408067584_o.jpg.pagespeed.ic.loJLMlZawO.jpg" alt="">
             <div class="mt-2 mb-2 text-lg text-xl ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quo repellat, a accusamus impedit veniam exercitationem vero culpa, tempora sint minus. Inventore recusandae deserunt optio beatae ipsum nihil odit est?</div>
@@ -21,6 +25,7 @@ const AboutPage = {
         <p class="mt-1">Tối ngày 16/06/2018 , Cao đẳng FPT Polytechnic Hà Nội đã tổ chức Lễ tôn vinh "Ông vàng Poly",Tuyên dương 295 cá nhan tập thể có thành tích xuất sác trong học tập cũng như hoạt</p>
       </div>
     </div>
+    ${Footer.render()}
         `
     }
 };

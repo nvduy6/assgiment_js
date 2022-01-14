@@ -1,26 +1,25 @@
 const Menudashboad = {
     render() {
-        return /*html*/ `
+        return /* html */ `
         <svg xmlns="http://www.w3.org/2000/svg" class="inline w-8 h-8 text-white lg:hidden" fill="none"
         viewBox="0 0 24 24" stroke="currentColor">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
     </svg>
     <div class="hidden lg:block">
-        <div class="flex items-center my-2 mb-2">
-    
-        <div class="flex-shrink-0 w-10 h-10">
-            <img class="w-10 h-10 rounded-full"
-                src="https://source.unsplash.com/user/erondu"
-                alt="admin dashboard ui">
-        </div>
+    <div class="flex items-center">
+    <div class="flex-shrink-0 w-10 h-10">
+        <img class="w-10 h-10 rounded-full"
+            src="https://source.unsplash.com/user/erondu"
+            alt="admin dashboard ui">
+    </div>
 
-        <div class="ml-4">
-            <div class="inline-block w-full h-full px-3 py-2 font-bold text-white">
-                Nguyễn Văn Duy
-            </div>
+    <div class="ml-4">
+        <div class="inline-block w-full h-full px-3 py-2 font-bold text-white">
+            Nguyễn Văn Duy
         </div>
     </div>
-        <ul>
+</div>
+        <ul class="mt-4">
             <li class="mb-6">
                 <div class="relative">
                     <span class="absolute inset-y-0 left-0 flex items-center pl-2">
@@ -36,7 +35,7 @@ const Menudashboad = {
                         class="w-full px-4 py-2 pl-12 rounded shadow outline-none" placeholder="Search...">
             </li>
             <li class="mb-2 rounded hover:shadow hover:bg-gray-800">
-                <a href="/admin/home" class="inline-block w-full h-full px-3 py-2 font-bold text-white">
+                <a href="/admin/dashoad" class="inline-block w-full h-full px-3 py-2 font-bold text-white">
                     <svg xmlns="http://www.w3.org/2000/svg" class="inline-block w-6 h-6 mr-2 -mt-2"
                         fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -46,18 +45,19 @@ const Menudashboad = {
                 </a>
             </li>
             <li class="mb-2 rounded hover:shadow hover:bg-gray-800">
-                <a href="/admin/new" class="inline-block w-full h-full px-3 py-2 font-bold text-white">
+                <a href="/admin/NewList" class="inline-block w-full h-full px-3 py-2 font-bold text-white">
                     <svg xmlns="http://www.w3.org/2000/svg" class="inline-block w-6 h-6 mr-2 -mt-2"
                         viewBox="0 0 20 20" fill="currentColor">
                         <path fill-rule="evenodd"
                             d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4z"
                             clip-rule="evenodd" />
                     </svg>
-                   New Lits
+                    Blogs
                 </a>
+                
             </li>
             <li class="mb-2 rounded hover:shadow hover:bg-gray-800">
-                <a href="/admin/new/add" class="inline-block w-full h-full px-3 py-2 font-bold text-white">
+                <a href="/admin/AddNews" class="inline-block w-full h-full px-3 py-2 font-bold text-white">
                     <svg xmlns="http://www.w3.org/2000/svg" class="inline-block w-6 h-6 mr-2 -mt-2"
                         fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -67,13 +67,23 @@ const Menudashboad = {
                 </a>
             </li>
             <li class="mb-2 rounded hover:shadow hover:bg-gray-800">
-                <a href="/admin/new/:id/edit" class="inline-block w-full h-full px-3 py-2 font-bold text-white">
+                <a href="/admin/New/id/edit" class="inline-block w-full h-full px-3 py-2 font-bold text-white">
                     <svg xmlns="http://www.w3.org/2000/svg" class="inline-block w-6 h-6 mr-2 -mt-2"
                         fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                     </svg>
                     Inbox
+                </a>
+            </li>
+            <li class="mb-2 rounded hover:shadow hover:bg-gray-800">
+                <a href="/" class="inline-block w-full h-full px-3 py-2 font-bold text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="inline-block w-6 h-6 mr-2 -mt-2"
+                        fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M3 10h10a8 8 0 018 8v2M3 10l6 6m-6-6l6-6" />
+                    </svg>
+                  Vào Website
                 </a>
             </li>
         </ul>

@@ -1,10 +1,14 @@
+import Footer from "../comporents/footer";
+import Header from "../comporents/header";
+
 const Sign = {
     render() {
         return /*html*/ `
+        ${Header.render()}
         <div class="min-h-full flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
   <div class="max-w-md w-full space-y-8">
     <div>
-      <img class="mx-auto h-12 w-auto" src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg" alt="Workflow">
+      <img class="mx-auto h-12 w-auto" src="https://ap.poly.edu.vn/images/logo.png" alt="Workflow">
       <h2 class="mt-6 text-center text-3xl font-extrabold text-gray-900">
         Sign in to your account
       </h2>
@@ -26,7 +30,7 @@ const Sign = {
           <label for="email-address" class="sr-only">Email address</label>
           <input id="email-address" name="email" type="email" autocomplete="email" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="Email address">
         </div>
-        <div>
+        <div class="mt-4">
           <label for="email-address" class="sr-only">Phone</label>
           <input id="email-address" name="email" type="text" autocomplete="name" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="Phone Number">
         </div>
@@ -50,6 +54,7 @@ const Sign = {
     </form>
   </div>
 </div>
+${Footer.render()}
         `
     }
 };

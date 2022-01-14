@@ -1,10 +1,3 @@
-// const menuList = ["Trang chủ", "Tuyển sinh", "Chương trình đào tạo", "Góc sinh viên", "Tuyển dụng"];
-// const menuElement = document.querySelector("#menu");
-// for (let i in menuList) {
-//     menuElement.innerHTML += `<li class="inline font-medium py-3 px-4 text-white  hover:text-cyan-900"><a href="">${menuList[i]}</a></li>`
-// }
-
-// =============================================
 const data = [{
         "createdAt": "2022-01-10T07:26:52.549Z",
         "title": "Vinh danh 295 sinh viên FPT Polytechinc học kỳ Sping 2018",

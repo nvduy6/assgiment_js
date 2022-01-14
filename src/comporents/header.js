@@ -24,7 +24,7 @@ const Header = {
             <div class="mt-2 mr-2 ">
                  <li class="inline font-medium ml-1  text-white  hover:text-cyan-900"><a href="/sign">Sign</a></li>
                 <li class="inline font-medium ml-1  text-white  hover:text-cyan-900"><a href="/login">Login</a></li>
-                <li class="inline font-medium ml-1 text-white  hover:text-cyan-900"><a href="/admin/">Admin</a></li>
+                <li class="inline font-medium ml-1 text-white  hover:text-cyan-900"><a href="/admin/dashoad">Admin</a></li>
             </div>
         </nav>
     </div>

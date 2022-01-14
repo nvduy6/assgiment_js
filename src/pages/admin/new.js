@@ -1,8 +1,35 @@
-import data from "../data";
-const AdNewlist = {
+import Menudashboad from "../../comporents/menudashboad";
+import data from "../../data";
+
+const ListNews = {
         render() {
             return /* html */ `
-        <div class="flex flex-col mt-8">
+
+            <div class="flex h-screen">
+            <div class="px-4 py-2 bg-gray-500 bg-indigo-600 lg:w-1/4">
+        ${Menudashboad.render()}
+            </div>
+        
+            <div class="w-full px-4 py-2 bg-gray-200 lg:w-full">
+            <div class="flex justify-between  min-w-0">
+                 <h2
+                class="text-2xl font-bold leading-7 text-gray-900 sm:text-3xl sm:truncate"
+                >
+                Danh sách bài viết
+                </h2>
+                <div>
+                <a href="/admin/AddNews" class="inline-block w-full h-full px-3 py-2 font-bold text-gray-900 ml-50">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="inline-block w-6 h-6 mr-2 -mt-2"
+                        fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M6 2a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V7.414A2 2 0 0015.414 6L12 2.586A2 2 0 0010.586 2H6zm5 6a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V8z" />
+                    </svg>
+                  Thêm mới
+                </a>
+                </div>
+            </div>
+            <div class="container mx-auto mt-12">
+            <div class="flex flex-col mt-8">
                         <div class="py-2 -my-2 overflow-x-auto sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8">
                             <div
                                 class="inline-block min-w-full overflow-hidden align-middle border-b border-gray-200 shadow sm:rounded-lg">
@@ -28,7 +55,7 @@ const AdNewlist = {
                                     </thead>
 
                                     <tbody class="bg-white">
-                                    ${data.map((post)=> `
+                                    ${data.map((post)=> /* html */ `
                                     <tr>
                     
                                             <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
@@ -54,7 +81,7 @@ const AdNewlist = {
 
                                             <td
                                                 class="px-6 py-4 text-sm leading-5 text-gray-500 whitespace-no-wrap border-b border-gray-200">
-                                                <a href="/admin/new/:${post.id}/edit/">
+                                                <a href="/admin/New/${post.id}/edit">
                                                 <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-blue-400"
                                                     fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -80,16 +107,11 @@ const AdNewlist = {
                                     </tbody>
                                 </table>
                             </div>
-                           
-                            <a href="/admin/new/add">
-                            <span
-                                class="inline-flex mt-2 px-6 py-3 text-xs font-semibold leading-5 text-green-800 bg-green-100 hover:bg-green-400 rounded-full">Add News</span>
-                                </a>
-
                         </div>
                     </div>
+            </div>
+        </div>
         `
-    }
+    },
 };
-
-export default AdNewlist;
+export default ListNews;

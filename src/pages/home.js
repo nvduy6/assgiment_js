@@ -1,8 +1,11 @@
 import Banner from "../comporents/banner";
+import Footer from "../comporents/footer";
+import Header from "../comporents/header";
 import NewsList from "../comporents/nexlist";
 const HomePage = {
     render() {
         return /* html */ ` 
+        ${Header.render()}
         <div class=" mt-1">
           ${Banner.render()}
         </div>
@@ -24,6 +27,7 @@ const HomePage = {
                     ${NewsList.render()}
                     </div>
             </div>
+           ${Footer.render()}
         
         `
     }
